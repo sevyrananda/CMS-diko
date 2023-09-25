@@ -29,3 +29,21 @@ Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 Route::get('/post', [AdminController::class, 'post'])->name('post');
 
 Route::get('/listpost', [AdminController::class, 'listPost'])->name('listPost');
+
+Route::get('/post', [AdminController::class, 'post'])->name('post');
+Route::get('/create-post', [AdminController::class, 'createPost'])->name('createPost'); 
+Route::post('/store-post', [AdminController::class, 'storePost'])->name('storePost');
+
+Route::get('/tambah-berita', [AdminController::class, 'tambahBerita'])->name('tambahBerita');
+Route::get('/edit-berita', [AdminController::class, 'editBerita'])->name('editBerita');
+//Route::get('/berita', [AdminController::class, 'Berita'])->name('Berita');
+
+// Route::post('/upload-image', 'AdminController@uploadImage')->name('upload.image');
+//Route::get('/tambah-data', 'AdminController@tambahData')->name('tambah.data');
+// Route::get('/edit/{id}', 'AdminController@edit')->name('edit.data');
+// Route::put('/update/{id}', 'AdminController@update')->name('update.data');
+// Route::get('/admin', 'AdminController@index'); // Contoh route untuk AdminController
+
+
+
+
